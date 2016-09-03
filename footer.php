@@ -6,7 +6,7 @@
   <img src="images/bug.jpg" alt="" width="128" height="150" /></div>
 <div id="authbio">
 <h2>About You!</h2>
-<p>I am Aditi Golder. I love cooking and love to making new recipe. That's the reason of making this website.
+<p>I love cooking and love to making new recipe. That's the reason of making this website.
 Here you can post your recipe and learn from it.<br>Happy Recipe !!!</p>
 
 </div>
