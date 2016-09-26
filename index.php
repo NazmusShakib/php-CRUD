@@ -91,7 +91,7 @@ $(document).ready(function()
             $.ajax({
                 type : "POST",
                 dataType: "JSON",
-                url : "db-action.php",
+                url : "up-action.php",
                 data : {id : window.JSON.stringify(list.nestable('serialize'))},
                 beforeSend : function(){},
                 success : function(){},
