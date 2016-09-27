@@ -19,45 +19,46 @@
     </menu>
 
     <div class="cf nestable-lists">
-
         <div class="dd" id="nestable">
+
+        
             <ol class="dd-list">
 
 
-                <li class="dd-item" data-id="1">
+                <li class="dd-item" data-id="1" data-value="Item 1">
                     <div class="dd-handle">Item 1</div>
                 </li>
 
 
-                <li class="dd-item" data-id="2">
+                <li class="dd-item" data-id="2" data-value="Item 2">
                     <div class="dd-handle">Item 2</div>
                     <ol class="dd-list">
-                        <li class="dd-item" data-id="3"><div class="dd-handle">Item 3</div></li>
-                        <li class="dd-item" data-id="4"><div class="dd-handle">Item 4</div></li>
-                        <li class="dd-item" data-id="5">
+                        <li class="dd-item" data-id="3" data-value="Item 3"><div class="dd-handle">Item 3</div></li>
+                        <li class="dd-item" data-id="4" data-value="Item 4"><div class="dd-handle">Item 4</div></li>
+                        <li class="dd-item" data-id="5" data-value="Item 5">
                             <div class="dd-handle">Item 5</div>
                             <ol class="dd-list">
-                                <li class="dd-item" data-id="6"><div class="dd-handle">Item 6</div></li>
-                                <li class="dd-item" data-id="7"><div class="dd-handle">Item 7</div></li>
-                                <li class="dd-item" data-id="8"><div class="dd-handle">Item 8</div></li>
+                                <li class="dd-item" data-id="6" data-value="Item 6"><div class="dd-handle">Item 6</div></li>
+                                <li class="dd-item" data-id="7" data-value="Item 7"><div class="dd-handle">Item 7</div></li>
+                                <li class="dd-item" data-id="8" data-value="Item 8"><div class="dd-handle">Item 8</div></li>
                             </ol>
                         </li>
-                        <li class="dd-item" data-id="9"><div class="dd-handle">Item 9</div></li>
-                        <li class="dd-item" data-id="10"><div class="dd-handle">Item 10</div></li>
+                        <li class="dd-item" data-id="9" data-value="Item 9"><div class="dd-handle">Item 9</div></li>
+                        <li class="dd-item" data-id="10" data-value="Item 10"><div class="dd-handle">Item 10</div></li>
                     </ol>
                 </li>
 
-                <li class="dd-item" data-id="11">
+                <li class="dd-item" data-id="11" data-value="Item 11">
                     <div class="dd-handle">Item 11</div>
                 </li>
 
-                <li class="dd-item" data-id="12">
+                <li class="dd-item" data-id="12" data-value="Item 12">
                     <div class="dd-handle">Item 12</div>
                 </li>
-                <li class="dd-item" data-id="13">
+                <li class="dd-item" data-id="13" data-value="Item 13">
                     <div class="dd-handle">Item 13</div>
                 </li>
-                <li class="dd-item" data-id="14">
+                <li class="dd-item" data-id="14" data-value="Item 14">
                     <div class="dd-handle">Item 14</div>
                 </li>
 
@@ -91,7 +92,7 @@ $(document).ready(function()
             $.ajax({
                 type : "POST",
                 dataType: "JSON",
-                url : "db-action.php",
+                url : "up-action.php",
                 data : {id : window.JSON.stringify(list.nestable('serialize'))},
                 beforeSend : function(){},
                 success : function(){},
